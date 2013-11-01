@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F09C82FC1816141100551698 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09C82FB1816141100551698 /* Foundation.framework */; };
+		F09C82FE1816141100551698 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09C82FD1816141100551698 /* CoreGraphics.framework */; };
+		F09C83001816141100551698 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09C82FF1816141100551698 /* UIKit.framework */; };
+		F09C83061816141100551698 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F09C83041816141100551698 /* InfoPlist.strings */; };
+		F09C83081816141100551698 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F09C83071816141100551698 /* main.m */; };
+		F09C830C1816141100551698 /* GMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F09C830B1816141100551698 /* GMAppDelegate.m */; };
+		F09C830F1816141100551698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09C830D1816141100551698 /* Main.storyboard */; };
+		F09C83141816141100551698 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09C83131816141100551698 /* Images.xcassets */; };
+		F09C831B1816141100551698 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09C831A1816141100551698 /* XCTest.framework */; };
+		F09C831C1816141100551698 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09C82FB1816141100551698 /* Foundation.framework */; };
+		F09C831D1816141100551698 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09C82FF1816141100551698 /* UIKit.framework */; };
+		F09C83251816141100551698 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F09C83231816141100551698 /* InfoPlist.strings */; };
+		F09C83271816141100551698 /* UIScrollView_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F09C83261816141100551698 /* UIScrollView_Challenge_SolutionTests.m */; };
+		F09C8331181615CC00551698 /* worldMap.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F09C8330181615CC00551698 /* worldMap.jpeg */; };
+		F09C8332181617C400551698 /* GMImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F09C83111816141100551698 /* GMImageViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F09C831E1816141100551698 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F09C82F01816141100551698 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F09C82F71816141100551698;
+			remoteInfo = "UIScrollView Challenge Solution";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F09C82F81816141100551698 /* UIScrollView Challenge Solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIScrollView Challenge Solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09C82FB1816141100551698 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F09C82FD1816141100551698 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F09C82FF1816141100551698 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F09C83031816141100551698 /* UIScrollView Challenge Solution-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIScrollView Challenge Solution-Info.plist"; sourceTree = "<group>"; };
+		F09C83051816141100551698 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F09C83071816141100551698 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F09C83091816141100551698 /* UIScrollView Challenge Solution-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView Challenge Solution-Prefix.pch"; sourceTree = "<group>"; };
+		F09C830A1816141100551698 /* GMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMAppDelegate.h; sourceTree = "<group>"; };
+		F09C830B1816141100551698 /* GMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMAppDelegate.m; sourceTree = "<group>"; };
+		F09C830E1816141100551698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F09C83101816141100551698 /* GMImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMImageViewController.h; sourceTree = "<group>"; };
+		F09C83111816141100551698 /* GMImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMImageViewController.m; sourceTree = "<group>"; };
+		F09C83131816141100551698 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F09C83191816141100551698 /* UIScrollView Challenge SolutionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIScrollView Challenge SolutionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09C831A1816141100551698 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F09C83221816141100551698 /* UIScrollView Challenge SolutionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIScrollView Challenge SolutionTests-Info.plist"; sourceTree = "<group>"; };
+		F09C83241816141100551698 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F09C83261816141100551698 /* UIScrollView_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIScrollView_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		F09C8330181615CC00551698 /* worldMap.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = worldMap.jpeg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F09C82F51816141100551698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09C82FE1816141100551698 /* CoreGraphics.framework in Frameworks */,
+				F09C83001816141100551698 /* UIKit.framework in Frameworks */,
+				F09C82FC1816141100551698 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09C83161816141100551698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09C831B1816141100551698 /* XCTest.framework in Frameworks */,
+				F09C831D1816141100551698 /* UIKit.framework in Frameworks */,
+				F09C831C1816141100551698 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F09C82EF1816141100551698 = {
+			isa = PBXGroup;
+			children = (
+				F09C83011816141100551698 /* UIScrollView Challenge Solution */,
+				F09C83201816141100551698 /* UIScrollView Challenge SolutionTests */,
+				F09C82FA1816141100551698 /* Frameworks */,
+				F09C82F91816141100551698 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F09C82F91816141100551698 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F09C82F81816141100551698 /* UIScrollView Challenge Solution.app */,
+				F09C83191816141100551698 /* UIScrollView Challenge SolutionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F09C82FA1816141100551698 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F09C82FB1816141100551698 /* Foundation.framework */,
+				F09C82FD1816141100551698 /* CoreGraphics.framework */,
+				F09C82FF1816141100551698 /* UIKit.framework */,
+				F09C831A1816141100551698 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F09C83011816141100551698 /* UIScrollView Challenge Solution */ = {
+			isa = PBXGroup;
+			children = (
+				F09C830A1816141100551698 /* GMAppDelegate.h */,
+				F09C830B1816141100551698 /* GMAppDelegate.m */,
+				F09C830D1816141100551698 /* Main.storyboard */,
+				F09C83101816141100551698 /* GMImageViewController.h */,
+				F09C83111816141100551698 /* GMImageViewController.m */,
+				F09C83131816141100551698 /* Images.xcassets */,
+				F09C83021816141100551698 /* Supporting Files */,
+			);
+			path = "UIScrollView Challenge Solution";
+			sourceTree = "<group>";
+		};
+		F09C83021816141100551698 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F09C8330181615CC00551698 /* worldMap.jpeg */,
+				F09C83031816141100551698 /* UIScrollView Challenge Solution-Info.plist */,
+				F09C83041816141100551698 /* InfoPlist.strings */,
+				F09C83071816141100551698 /* main.m */,
+				F09C83091816141100551698 /* UIScrollView Challenge Solution-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F09C83201816141100551698 /* UIScrollView Challenge SolutionTests */ = {
+			isa = PBXGroup;
+			children = (
+				F09C83261816141100551698 /* UIScrollView_Challenge_SolutionTests.m */,
+				F09C83211816141100551698 /* Supporting Files */,
+			);
+			path = "UIScrollView Challenge SolutionTests";
+			sourceTree = "<group>";
+		};
+		F09C83211816141100551698 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F09C83221816141100551698 /* UIScrollView Challenge SolutionTests-Info.plist */,
+				F09C83231816141100551698 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F09C82F71816141100551698 /* UIScrollView Challenge Solution */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F09C832A1816141100551698 /* Build configuration list for PBXNativeTarget "UIScrollView Challenge Solution" */;
+			buildPhases = (
+				F09C82F41816141100551698 /* Sources */,
+				F09C82F51816141100551698 /* Frameworks */,
+				F09C82F61816141100551698 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIScrollView Challenge Solution";
+			productName = "UIScrollView Challenge Solution";
+			productReference = F09C82F81816141100551698 /* UIScrollView Challenge Solution.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F09C83181816141100551698 /* UIScrollView Challenge SolutionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F09C832D1816141100551698 /* Build configuration list for PBXNativeTarget "UIScrollView Challenge SolutionTests" */;
+			buildPhases = (
+				F09C83151816141100551698 /* Sources */,
+				F09C83161816141100551698 /* Frameworks */,
+				F09C83171816141100551698 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F09C831F1816141100551698 /* PBXTargetDependency */,
+			);
+			name = "UIScrollView Challenge SolutionTests";
+			productName = "UIScrollView Challenge SolutionTests";
+			productReference = F09C83191816141100551698 /* UIScrollView Challenge SolutionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F09C82F01816141100551698 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GM;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "G.Maka Ltd";
+				TargetAttributes = {
+					F09C83181816141100551698 = {
+						TestTargetID = F09C82F71816141100551698;
+					};
+				};
+			};
+			buildConfigurationList = F09C82F31816141100551698 /* Build configuration list for PBXProject "UIScrollView Challenge Solution" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F09C82EF1816141100551698;
+			productRefGroup = F09C82F91816141100551698 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F09C82F71816141100551698 /* UIScrollView Challenge Solution */,
+				F09C83181816141100551698 /* UIScrollView Challenge SolutionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F09C82F61816141100551698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09C83141816141100551698 /* Images.xcassets in Resources */,
+				F09C83061816141100551698 /* InfoPlist.strings in Resources */,
+				F09C830F1816141100551698 /* Main.storyboard in Resources */,
+				F09C8331181615CC00551698 /* worldMap.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09C83171816141100551698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09C83251816141100551698 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F09C82F41816141100551698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09C830C1816141100551698 /* GMAppDelegate.m in Sources */,
+				F09C8332181617C400551698 /* GMImageViewController.m in Sources */,
+				F09C83081816141100551698 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F09C83151816141100551698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09C83271816141100551698 /* UIScrollView_Challenge_SolutionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F09C831F1816141100551698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F09C82F71816141100551698 /* UIScrollView Challenge Solution */;
+			targetProxy = F09C831E1816141100551698 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F09C83041816141100551698 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F09C83051816141100551698 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F09C830D1816141100551698 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F09C830E1816141100551698 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F09C83231816141100551698 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F09C83241816141100551698 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F09C83281816141100551698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F09C83291816141100551698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F09C832B1816141100551698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIScrollView Challenge Solution/UIScrollView Challenge Solution-Prefix.pch";
+				INFOPLIST_FILE = "UIScrollView Challenge Solution/UIScrollView Challenge Solution-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F09C832C1816141100551698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIScrollView Challenge Solution/UIScrollView Challenge Solution-Prefix.pch";
+				INFOPLIST_FILE = "UIScrollView Challenge Solution/UIScrollView Challenge Solution-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F09C832E1816141100551698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UIScrollView Challenge Solution.app/UIScrollView Challenge Solution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIScrollView Challenge Solution/UIScrollView Challenge Solution-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UIScrollView Challenge SolutionTests/UIScrollView Challenge SolutionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F09C832F1816141100551698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UIScrollView Challenge Solution.app/UIScrollView Challenge Solution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIScrollView Challenge Solution/UIScrollView Challenge Solution-Prefix.pch";
+				INFOPLIST_FILE = "UIScrollView Challenge SolutionTests/UIScrollView Challenge SolutionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F09C82F31816141100551698 /* Build configuration list for PBXProject "UIScrollView Challenge Solution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F09C83281816141100551698 /* Debug */,
+				F09C83291816141100551698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F09C832A1816141100551698 /* Build configuration list for PBXNativeTarget "UIScrollView Challenge Solution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F09C832B1816141100551698 /* Debug */,
+				F09C832C1816141100551698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F09C832D1816141100551698 /* Build configuration list for PBXNativeTarget "UIScrollView Challenge SolutionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F09C832E1816141100551698 /* Debug */,
+				F09C832F1816141100551698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F09C82F01816141100551698 /* Project object */;
+}

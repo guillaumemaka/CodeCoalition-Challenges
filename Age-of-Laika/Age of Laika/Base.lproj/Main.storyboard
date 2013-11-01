@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="CCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qs8-Yx-4PG"/>
+                        <viewControllerLayoutGuide type="bottom" id="eMr-du-hNv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laika.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5eo-aG-6dL">
+                                <rect key="frame" x="-1" y="268" width="320" height="300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a human years" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iyQ-jf-aHD">
+                                <rect key="frame" x="65" y="141" width="191" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qiw-Ys-vlx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBp-D4-o2h">
+                                <rect key="frame" x="88" y="179" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pQF-LN-8jJ"/>
+                                </constraints>
+                                <state key="normal" title="Convert to dog years">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RD7-n4-OMB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age of Laïka" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2F-k0-g8K">
+                                <rect key="frame" x="102" y="40" width="115" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="HBw-ts-2sK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXI-mE-US1">
+                                <rect key="frame" x="21" y="217" width="279" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="oef-6P-OlK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LXI-mE-US1" firstAttribute="top" secondItem="MBp-D4-o2h" secondAttribute="bottom" constant="8" id="378-E8-ktx"/>
+                            <constraint firstItem="U2F-k0-g8K" firstAttribute="top" secondItem="Qs8-Yx-4PG" secondAttribute="bottom" constant="20" id="9Jf-oD-1Mf"/>
+                            <constraint firstItem="MBp-D4-o2h" firstAttribute="top" secondItem="iyQ-jf-aHD" secondAttribute="bottom" constant="8" symbolic="YES" id="Did-6f-1J3"/>
+                            <constraint firstItem="iyQ-jf-aHD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="65" id="Ede-EA-rav"/>
+                            <constraint firstAttribute="bottom" secondItem="5eo-aG-6dL" secondAttribute="bottom" id="IdR-na-TpE"/>
+                            <constraint firstItem="U2F-k0-g8K" firstAttribute="centerX" secondItem="LXI-mE-US1" secondAttribute="centerX" constant="-1" id="RyK-NU-3Pc"/>
+                            <constraint firstItem="LXI-mE-US1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="21" id="dIC-kK-pcB"/>
+                            <constraint firstItem="iyQ-jf-aHD" firstAttribute="top" secondItem="U2F-k0-g8K" secondAttribute="bottom" constant="77" id="guR-Xu-ZM2"/>
+                            <constraint firstItem="5eo-aG-6dL" firstAttribute="top" secondItem="LXI-mE-US1" secondAttribute="bottom" constant="30" id="hny-K1-UUh"/>
+                            <constraint firstItem="5eo-aG-6dL" firstAttribute="centerX" secondItem="LXI-mE-US1" secondAttribute="centerX" constant="-1.5" id="kMm-7w-cks"/>
+                            <constraint firstItem="5eo-aG-6dL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="-1" id="pso-33-KxU"/>
+                            <constraint firstItem="MBp-D4-o2h" firstAttribute="centerX" secondItem="iyQ-jf-aHD" secondAttribute="centerX" id="rkI-Zj-tg9"/>
+                            <constraint firstItem="MBp-D4-o2h" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="vSM-Zq-CCt"/>
+                            <constraint firstAttribute="trailing" secondItem="5eo-aG-6dL" secondAttribute="trailing" constant="1" id="wzV-E8-P1d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dogYearsLabel" destination="LXI-mE-US1" id="uJi-5S-kLa"/>
+                        <outlet property="humanYearsTextFields" destination="iyQ-jf-aHD" id="nWa-22-2hC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="laika.jpg" width="1024" height="768"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
