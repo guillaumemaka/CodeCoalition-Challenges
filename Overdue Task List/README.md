@@ -1,6 +1,6 @@
 #Section 6 
 
-##OVERDUE ASSIGNMENT (PDF)
+##OVERDUE ASSIGNMENT
 
 ###Objective:
 
