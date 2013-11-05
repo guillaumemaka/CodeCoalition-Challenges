@@ -14,13 +14,17 @@
 		F04018DA1827EF3400AAAD20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F04018D91827EF3400AAAD20 /* main.m */; };
 		F04018DE1827EF3400AAAD20 /* GMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F04018DD1827EF3400AAAD20 /* GMAppDelegate.m */; };
 		F04018E11827EF3400AAAD20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04018DF1827EF3400AAAD20 /* Main.storyboard */; };
-		F04018E41827EF3400AAAD20 /* GMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04018E31827EF3400AAAD20 /* GMViewController.m */; };
 		F04018E61827EF3400AAAD20 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F04018E51827EF3400AAAD20 /* Images.xcassets */; };
 		F04018ED1827EF3500AAAD20 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04018EC1827EF3500AAAD20 /* XCTest.framework */; };
 		F04018EE1827EF3500AAAD20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04018CD1827EF3400AAAD20 /* Foundation.framework */; };
 		F04018EF1827EF3500AAAD20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04018D11827EF3400AAAD20 /* UIKit.framework */; };
 		F04018F71827EF3500AAAD20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F04018F51827EF3500AAAD20 /* InfoPlist.strings */; };
 		F04018F91827EF3500AAAD20 /* Overdue_Task_ListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F04018F81827EF3500AAAD20 /* Overdue_Task_ListTests.m */; };
+		F04019061827F1F900AAAD20 /* GMTaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04019051827F1F900AAAD20 /* GMTaskListViewController.m */; };
+		F04019091827F84B00AAAD20 /* GMAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04019081827F84B00AAAD20 /* GMAddTaskViewController.m */; };
+		F040190E18280D4C00AAAD20 /* GMTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F040190D18280D4C00AAAD20 /* GMTask.m */; };
+		F04019111828700F00AAAD20 /* GMTaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04019101828700F00AAAD20 /* GMTaskDetailViewController.m */; };
+		F04019141828786200AAAD20 /* GMTaskEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04019131828786200AAAD20 /* GMTaskEditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +49,23 @@
 		F04018DC1827EF3400AAAD20 /* GMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMAppDelegate.h; sourceTree = "<group>"; };
 		F04018DD1827EF3400AAAD20 /* GMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMAppDelegate.m; sourceTree = "<group>"; };
 		F04018E01827EF3400AAAD20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F04018E21827EF3400AAAD20 /* GMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMViewController.h; sourceTree = "<group>"; };
-		F04018E31827EF3400AAAD20 /* GMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMViewController.m; sourceTree = "<group>"; };
 		F04018E51827EF3400AAAD20 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F04018EB1827EF3500AAAD20 /* Overdue Task ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Overdue Task ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04018EC1827EF3500AAAD20 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F04018F41827EF3500AAAD20 /* Overdue Task ListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Overdue Task ListTests-Info.plist"; sourceTree = "<group>"; };
 		F04018F61827EF3500AAAD20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F04018F81827EF3500AAAD20 /* Overdue_Task_ListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Overdue_Task_ListTests.m; sourceTree = "<group>"; };
+		F04019041827F1F900AAAD20 /* GMTaskListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMTaskListViewController.h; sourceTree = "<group>"; };
+		F04019051827F1F900AAAD20 /* GMTaskListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMTaskListViewController.m; sourceTree = "<group>"; };
+		F04019071827F84B00AAAD20 /* GMAddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMAddTaskViewController.h; sourceTree = "<group>"; };
+		F04019081827F84B00AAAD20 /* GMAddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMAddTaskViewController.m; sourceTree = "<group>"; };
+		F040190B1827FB8600AAAD20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		F040190C18280D4C00AAAD20 /* GMTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMTask.h; sourceTree = "<group>"; };
+		F040190D18280D4C00AAAD20 /* GMTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMTask.m; sourceTree = "<group>"; };
+		F040190F1828700F00AAAD20 /* GMTaskDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMTaskDetailViewController.h; sourceTree = "<group>"; };
+		F04019101828700F00AAAD20 /* GMTaskDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMTaskDetailViewController.m; sourceTree = "<group>"; };
+		F04019121828786200AAAD20 /* GMTaskEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMTaskEditViewController.h; sourceTree = "<group>"; };
+		F04019131828786200AAAD20 /* GMTaskEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMTaskEditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +125,11 @@
 		F04018D31827EF3400AAAD20 /* Overdue Task List */ = {
 			isa = PBXGroup;
 			children = (
+				F04019031827F1A300AAAD20 /* Models */,
+				F04019021827F19700AAAD20 /* Controllers */,
 				F04018DC1827EF3400AAAD20 /* GMAppDelegate.h */,
 				F04018DD1827EF3400AAAD20 /* GMAppDelegate.m */,
 				F04018DF1827EF3400AAAD20 /* Main.storyboard */,
-				F04018E21827EF3400AAAD20 /* GMViewController.h */,
-				F04018E31827EF3400AAAD20 /* GMViewController.m */,
 				F04018E51827EF3400AAAD20 /* Images.xcassets */,
 				F04018D41827EF3400AAAD20 /* Supporting Files */,
 			);
@@ -150,6 +163,30 @@
 				F04018F51827EF3500AAAD20 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F04019021827F19700AAAD20 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F04019041827F1F900AAAD20 /* GMTaskListViewController.h */,
+				F04019051827F1F900AAAD20 /* GMTaskListViewController.m */,
+				F04019071827F84B00AAAD20 /* GMAddTaskViewController.h */,
+				F04019081827F84B00AAAD20 /* GMAddTaskViewController.m */,
+				F040190F1828700F00AAAD20 /* GMTaskDetailViewController.h */,
+				F04019101828700F00AAAD20 /* GMTaskDetailViewController.m */,
+				F04019121828786200AAAD20 /* GMTaskEditViewController.h */,
+				F04019131828786200AAAD20 /* GMTaskEditViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F04019031827F1A300AAAD20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F040190C18280D4C00AAAD20 /* GMTask.h */,
+				F040190D18280D4C00AAAD20 /* GMTask.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,8 +288,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F04018DE1827EF3400AAAD20 /* GMAppDelegate.m in Sources */,
-				F04018E41827EF3400AAAD20 /* GMViewController.m in Sources */,
+				F04019061827F1F900AAAD20 /* GMTaskListViewController.m in Sources */,
+				F040190E18280D4C00AAAD20 /* GMTask.m in Sources */,
 				F04018DA1827EF3400AAAD20 /* main.m in Sources */,
+				F04019141828786200AAAD20 /* GMTaskEditViewController.m in Sources */,
+				F04019111828700F00AAAD20 /* GMTaskDetailViewController.m in Sources */,
+				F04019091827F84B00AAAD20 /* GMAddTaskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +328,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F04018E01827EF3400AAAD20 /* Base */,
+				F040190B1827FB8600AAAD20 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

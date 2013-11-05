@@ -10,7 +10,18 @@
 #warning "This project uses features only available in iOS SDK 5.0 and later."
 #endif
 
+#define TASK_NAME_KEY @"name"
+#define TASK_DESCRIPTION_KEY @"description"
+#define TASK_DATE_KEY @"dueDate"
+#define TASK_COMPLETED_KEY @"isCompleted"
+#define TASkS_OBJECT_KEY @"Tasks"
+#define DATE_FORMAT @"D, dd, MMM, yyyy"
+
 #ifdef __OBJC__
   #import <UIKit/UIKit.h>
   #import <Foundation/Foundation.h>
+
+  #define TASK_COMPLETED_COLOR [UIColor greenColor]
+  #define TASK_UNCOMPLETED_COLOR [UIColor yellowColor]
+  #define TASK_INPAST_COLOR [UIColor redColor]
 #endif
