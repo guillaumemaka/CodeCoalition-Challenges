@@ -58,6 +58,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="reorderBarButtonItem" destination="nDf-7J-Gxv" id="TnQ-PA-4e6"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Txt-TY-Ksw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -289,7 +292,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Edit Task" id="RgH-4T-4UU">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="lAJ-ij-eNs">
+                        <barButtonItem key="rightBarButtonItem" title="Save" style="done" id="lAJ-ij-eNs">
                             <connections>
                                 <action selector="saveAction:" destination="Nbf-Rx-CUk" id="KkB-ax-ftO"/>
                             </connections>

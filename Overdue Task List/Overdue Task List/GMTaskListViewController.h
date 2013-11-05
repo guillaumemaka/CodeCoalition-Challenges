@@ -11,6 +11,7 @@
 #import "GMTaskDetailViewController.h"
 
 @interface GMTaskListViewController : UITableViewController <GMAddTaskViewControllerDelegate, GMTaskDetailViewControllerDelegate>
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *reorderBarButtonItem;
 
 - (IBAction)reorderAction:(UIBarButtonItem *)sender;
 

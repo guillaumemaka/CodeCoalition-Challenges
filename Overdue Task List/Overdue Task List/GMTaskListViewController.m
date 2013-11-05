@@ -10,7 +10,13 @@
 #import "GMTask.h"
 
 @interface GMTaskListViewController ()
+
+//! Track the state of the table view
+@property (nonatomic) BOOL isInEditingMode;
+
+//! The data source for the table view
 @property (strong, nonatomic) NSMutableArray *tasks;
+
 /*! Load tasks from NSUserDefault */
 -(void) loadTasksFromPropertyList;
 
@@ -35,6 +41,9 @@
  \return YES if date1 is greater than date2, NO otherwise
  */
 -(BOOL) isDate:(NSDate*)date1 greaterThan:(NSDate*)date2;
+
+//! Method that update the UI
+-(void) updateUI;
 @end
 
 @implementation GMTaskListViewController
@@ -43,6 +52,7 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  self.isInEditingMode = [self.tableView isEditing];
   [self loadTasksFromPropertyList];
 }
 
@@ -66,6 +76,7 @@
   }
   
   [self.tableView reloadData];
+  [self updateUI];
 }
 
 -(void)saveTasks{
@@ -97,6 +108,28 @@
   
   return NO;
 }
+
+-(void)updateUI{
+  // if no more task set editing mode to NO
+  if ([self.tasks count] == 0) {
+    [self.tableView setEditing:NO];
+    self.isInEditingMode = NO;
+  }
+  
+  if ([self.tasks count] > 0){
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:nil
+                                                                             style:UIBarButtonItemStyleBordered
+                                                                            target:self
+                                                                            action:@selector(reorderAction:)];
+    
+
+    self.navigationItem.leftBarButtonItem.style = self.isInEditingMode ? UIBarButtonItemStyleDone : UIBarButtonItemStyleBordered;
+    self.navigationItem.leftBarButtonItem.title = self.isInEditingMode ? @"Done" : @"Edit";
+  }else{
+    self.navigationItem.leftBarButtonItem = nil;
+  }
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -129,15 +162,23 @@
   }
   
   cell.textLabel.text = task.name;
+  
   NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
   [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+  
   cell.detailTextLabel.text =  [dateFormatter stringFromDate:task.dueDate] ;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
   GMTask *task = self.tasks[indexPath.row];
+  
+  // Toggle thtask state
   task.isConpleted = !task.isConpleted;
+  
+  // reload the cell to reflect change
   [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+  
+  // save changes
   [self saveTasks];
 }
 
@@ -155,12 +196,23 @@
 {
   if (editingStyle == UITableViewCellEditingStyleDelete) {
     // Delete the row from the data source
+    
+    // tell the table view we do some operation
     [self.tableView beginUpdates];
+    
+    // first we remove the task from the data source
     [self.tasks removeObjectAtIndex:indexPath.row];
+    
+    // second we remove the task from the view
     [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    
+    // third notify the view we've done
     [self.tableView endUpdates];
+    
+    // save changes
     [self saveTasks];
     
+    [self updateUI];
   }
   else if (editingStyle == UITableViewCellEditingStyleInsert) {
     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -183,7 +235,7 @@
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
   // Return NO if you do not want the item to be re-orderable.
-  return YES;
+  return [self.tasks count] > 1;
 }
 
 
@@ -210,6 +262,7 @@
 
 -(void)didAddTask:(GMTask *)task{
   [self.tasks addObject:task];
+  [self updateUI];
   [self.tableView reloadData];
   [self dismissViewControllerAnimated:YES completion:nil];
   [self saveTasks];
@@ -229,12 +282,8 @@
 #pragma mark - IBActions
 
 - (IBAction)reorderAction:(UIBarButtonItem *)sender {
-  if (![self.tableView isEditing]) {
-    [self.tableView setEditing:YES animated:YES];
-    sender.title = @"Done";
-  }else{
-    [self.tableView setEditing:NO animated:YES];
-    sender.title = @"Re-order";
-  }
+  [self.tableView setEditing:!self.isInEditingMode];
+  self.isInEditingMode = !self.isInEditingMode;
+  [self updateUI];
 }
 @end

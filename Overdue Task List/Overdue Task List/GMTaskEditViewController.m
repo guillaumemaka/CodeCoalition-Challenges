@@ -9,8 +9,13 @@
 #import "GMTaskEditViewController.h"
 
 @interface GMTaskEditViewController ()
+//! Heloer method to setup the view controller
 - (void) setUp;
+
+//! Method to update the UI when the model is updated
 - (void) updateUI;
+
+//! Target action to dismiss the keyboard on UITextView
 - (void) dismissKeyboard:(id)sender;
 @end
 
@@ -19,16 +24,20 @@
 
 - (void)setUp
 {
+  // Create a tool bar
   UIToolbar* toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
   [toolbar sizeToFit];
   toolbar.barStyle = UIBarStyleDefault;
   
+  // Add a flexible space and a done button
   toolbar.items = @[[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
                     [[UIBarButtonItem alloc] initWithTitle:@"Done"
                                                      style:UIBarButtonItemStyleDone
                                                     target:self
                                                     action:@selector(dismissKeyboard:)]
                     ];
+  
+  // Set the input Accessory View of the UITextView
   _taskDescriptionTextView.inputAccessoryView = toolbar;
 }
 
