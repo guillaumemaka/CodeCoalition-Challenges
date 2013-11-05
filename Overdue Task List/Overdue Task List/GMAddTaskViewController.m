@@ -67,9 +67,11 @@ enum GMTableViewRow {
 
 
 -(void) datePickerValueChange:(id)sender{
-  UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:GMTableViewRowDueDate inSection:0]];
+  UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:GMTableViewRowDueDate
+                                                                                   inSection:0]];
   NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
   [dateFormatter setDateStyle:NSDateFormatterLongStyle];
+
   cell.detailTextLabel.text = [dateFormatter stringFromDate:_datePicker.date];
 }
 
