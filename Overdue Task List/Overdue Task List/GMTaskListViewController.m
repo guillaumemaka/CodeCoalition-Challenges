@@ -20,7 +20,7 @@
 /*! Load tasks from NSUserDefault */
 -(void) loadTasksFromPropertyList;
 
-// Save task to NSUserDefault
+//! Save task to NSUserDefault
 -(void) saveTasks;
 
 /*! Get a task from a property list
@@ -224,9 +224,7 @@
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
-  GMTask *taskToMove = self.tasks[fromIndexPath.row];
-  [self.tasks removeObjectAtIndex:fromIndexPath.row];
-  [self.tasks insertObject:taskToMove atIndex:toIndexPath.row];
+  [self.tasks exchangeObjectAtIndex:toIndexPath.row withObjectAtIndex:fromIndexPath.row];
   [self saveTasks];
 }
 
